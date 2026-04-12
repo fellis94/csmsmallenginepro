@@ -13,7 +13,7 @@ export default function HomePage() {
         </div>
         
         <h1 className="text-6xl font-bold text-white mb-4 tracking-tighter">
-          Rotary CRM
+          CSM Small Engine Pro
         </h1>
         
         <p className="text-2xl text-zinc-400 mb-12">
@@ -31,7 +31,7 @@ export default function HomePage() {
         </Link>
 
         <p className="mt-10 text-zinc-500 text-sm">
-          Connected to Rotary Corp • Built with Next.js
+          Connected to CSM Small Engine Pro • Built with Next.js
         </p>
       </div>
     </div>
