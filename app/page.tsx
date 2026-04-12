@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Package, Search } from 'lucide-react';
+import { Package, Search, Users } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -17,18 +17,30 @@ export default function HomePage() {
         </h1>
         
         <p className="text-2xl text-zinc-400 mb-12">
-          Parts Search • Quotes • Payments
+          Parts Search • Quotes • Payments • CRM
         </p>
 
-        <Link
-          href="/search"
-          className="inline-flex items-center gap-4 bg-emerald-600 hover:bg-emerald-700 
-                     text-white px-12 py-6 rounded-2xl text-2xl font-semibold 
-                     transition-all active:scale-95 shadow-lg shadow-emerald-900/50"
-        >
-          <Search className="w-8 h-8" />
-          Start Parts Search
-        </Link>
+        <div className="flex flex-col gap-4">
+          <Link
+            href="/search"
+            className="inline-flex items-center gap-4 bg-emerald-600 hover:bg-emerald-700 
+            text-white px-12 py-6 rounded-2xl text-2xl font-semibold 
+            transition-all active:scale-95 shadow-lg shadow-emerald-900/50"
+          >
+            <Search className="w-8 h-8" />
+            Start Parts Search
+          </Link>
+
+          <Link
+            href="/crm"
+            className="inline-flex items-center gap-4 bg-emerald-600 hover:bg-emerald-700 
+            text-white px-12 py-6 rounded-2xl text-2xl font-semibold 
+            transition-all active:scale-95 shadow-lg shadow-emerald-900/50"
+          >
+            <Users className="w-8 h-8" />
+            CRM
+          </Link>
+        </div>
 
         <p className="mt-10 text-zinc-500 text-sm">
           Connected to CSM Small Engine Pro • Built with Next.js
