@@ -1,9 +1,6 @@
-mkdir -p components/lib
-cat > components/lib/utils.ts << 'EOF'
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
-EOF
